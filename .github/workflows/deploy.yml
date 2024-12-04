@@ -40,7 +40,7 @@ jobs:
       # Paso 6: Subir la imagen a ECR
       - name: Push Docker image to ECR
         run: |
-          docker push 218266829911.dkr.ecr.us-east-1.amazonaws.com/orders:latest
+          docker push 218266829911.dkr.ecr.us-east-1.amazonaws.com/products:latest
           
       # Paso 7: Configurar kubectl
       - name: Set up kubectl
