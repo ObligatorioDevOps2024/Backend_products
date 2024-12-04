@@ -35,7 +35,7 @@ jobs:
       # Paso 5: Construir la imagen Docker
       - name: Build Docker image
         run: |
-          docker build -t 218266829911.dkr.ecr.us-east-1.amazonaws.com/obligatorio/products:latest .
+          docker build -t 218266829911.dkr.ecr.us-east-1.amazonaws.com/products:latest .
 
       # Paso 6: Subir la imagen a ECR
       - name: Push Docker image to ECR
