@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: products-service
+  name: prod-products-service
 spec:
   selector:
-    app: products
+    app: prod-products
   ports:
     - protocol: TCP
       port: 80           # Puerto externo al que se conecta

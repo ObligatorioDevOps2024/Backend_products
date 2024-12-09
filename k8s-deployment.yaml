@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: products-deployment
+  name: prod-products-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: products
+      app: prod-products
   template:
     metadata:
       labels:
-        app: products
+        app: prod-products
     spec:
       containers:
-        - name: products
-          image: 218266829911.dkr.ecr.us-east-1.amazonaws.com/products:latest
+        - name: prod-products
+          image: 218266829911.dkr.ecr.us-east-1.amazonaws.com/prod-products:latest
           ports:
             - containerPort: 8080
